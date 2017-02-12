@@ -1,7 +1,4 @@
-require_relative 'lib/board'
-require_relative 'lib/display'
-require_relative 'lib/player'
-require_relative 'lib/reveal'
+Dir[File.dirname(__FILE__) + '/lib/*.rb'].each {|file| require file }
 
 # Main game class
 class Hangman
